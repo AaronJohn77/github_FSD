@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Function</title>
+</head>
+<body>
+    <form>
+        <label>Enter your username or user ID : </label> </br>
+        <input type="text" id="login_textfield"> </br>
+        <label>Enter your user password : </label></br>
+        <input type="text" id="password_textfield"> </br>
+        </br>
+        <button onclick="login()"> Login </button>
+
+    </form>
+
+    <script>
+
+        function login(){
+
+        let userid, userpassword;
+        userid = document.getElementById("login_textfield").value;
+        userpassword = document.getElementById("password_textfield").value;
+        if((userid == "admin" || userid == "12345" )  && userpassword == "abc123")
+        {
+            window.open("index.html");
+
+        }else{
+            alert("Please enter the correct details.")
+        }
+
+        }
+
+    </script>
+    
+</body>
+</html>
