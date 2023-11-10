@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Line</title>
+</head>
+<body>
+    <form>
+        <Label>Enter a line : </Label> 
+        <input type="text" id="get_Line">
+
+        <br>
+        <Label>Enter the text you search : </Label> 
+        <input type="text" id="find_word">
+        <br>
+        <button onclick="display_function()"> Submit</button>
+        <!-- <br>
+        <Label>Enter the word in the sentence : </Label> 
+        <input type="text" id="get_search "> -->
+        <!-- <button onclick="display_function()"> Find</button> -->
+
+    </form>
+
+    <script>
+
+        function display_function() {
+        
+            //declare var 
+            let enterline, numChar = 0, uppercase, searchText, position;
+            enterline = document.getElementById("get_Line").value;
+            searchText = document.getElementById("find_word").value;
+            console.log(searchText);
+
+            //Count function 
+
+            document.write("</br>");
+            document.write("Count the number of char in the line (include spacing) : ");
+            // document.write("Display a junk "+ numChar);
+            console.log(numChar)
+            numChar = enterline.length;
+            document.write(numChar);
+
+            document.write("</br>");
+            document.write("Count the number of char in the line (without spacing) : ");
+            // document.write("Display a junk "+ numChar);
+            console.log(numChar)
+            numChar = enterline.trim().length;
+            console.log(numChar)
+            document.write(numChar);
+
+            // Convert upper case
+            document.write("</br>");
+            document.write("Convert the line to upper case: ");
+            document.write("</br>");
+
+            uppercase = enterline.toUpperCase();
+            document.write(uppercase);
+
+            document.write("</br>");
+            // Search Line
+            document.write("Search text " + searchText);
+            document.write("</br>");
+            position = enterline.search(searchText) + 1;
+            document.write("Display the Position text: ");
+            if (position == 0){
+                document.write("Word not find ");
+            }else{
+                document.write(position);
+            document.write("</br>");
+            }
+
+            // document.write("Display the search text using wordindex: ");
+
+
+            // let wordIndex;
+            // wordIndex = enterline.indexof(searchText);
+        
+            // document.write("Display the search text using indexOf: ");
+            // document.write(wordIndex);
+   
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

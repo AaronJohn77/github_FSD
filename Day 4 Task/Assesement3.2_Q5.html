@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci sequence</title>
+</head>
+<body>
+    <h1>Fibonacci sequence</h1> <br>
+    <p>The first 10 terms of the Fibonacci sequence are: </p><br>
+    <p> 0, 1, 1, 2, 3, 5, 8, 13, 21, 34</p><br>
+
+    <p> Fibonacci sequence that calculate using for loop: </p><br>
+    <script>
+    let a = 0;
+    let b = 1;
+
+    document.write(a + ' , ');
+    document.write(b + ' , ') ;
+
+    for (let i = 1; i <= 8; i++) {
+
+     let c = a + b;
+     document.write(c);
+     document.write(' , ');
+     a = b;
+     b = c;
+}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrates type coercion</title>
+</head>
+<body>
+    
+    <script>
+
+        let a = 10, b = 20, c = "20.5", d = "15", f = 3, z = 0, x= "cat", num = 10, str = "20", bool = true;
+        document.write('a != b  Result display: ');
+        document.write(  a != b);
+        document.write('</br>');
+
+        document.write('b == c  Result display: ');
+        document.write( b == c);
+        document.write('</br>');
+
+        document.write('b === c  Result display: ');
+        document.write( b === c);
+        document.write('</br>');
+
+        document.write('d >= c  Result display: ');
+        document.write( d >= c);
+        document.write('</br>');
+
+        document.write('d >= f  Result display: ');
+        document.write( d >= f);
+        document.write('</br>');
+
+        document.write('f <= c  Result display: ');
+        document.write( f <= c);
+        document.write('</br>');
+
+        document.write('z != c && b == c && f > z  Result display: ');
+        document.write( z != c && b == c && f > z);
+        document.write('</br>');
+
+        document.write('z != c && b === c && f < z  Result display: ');
+        document.write( z != c && b === c && f < z);
+        document.write('</br>');
+
+        document.write('z <= c || b === c | f > z  Result display: ');
+        document.write( z <= c || b === c | f > z);
+        document.write('</br>');
+
+        document.write('z z != c || b == c || f < z  Result display: ');
+        document.write( z != c || b == c || f < z);
+        document.write('</br>');
+
+        document.write('</br>');
+
+        document.write("Testing the function of isNaN");
+        document.write("In JavaScript NaN is short for 'not a number'. <br>  The isNaN() method converts the value to a number before testing it.");
+        document.write('</br>');
+        document.write('</br>');
+        document.write('isNaN("apple")  Result display: ');
+        document.write(isNaN("apple"));
+        document.write('</br>');
+
+        document.write('isNaN(10)  Result display: ');
+        document.write(isNaN(10));
+        document.write('</br>');
+
+        document.write('isNaN(c)  Result display: ');
+        document.write(isNaN(c));
+        document.write('</br>');
+
+        document.write('isNaN(x)  Result display: ');
+        document.write(isNaN(x));
+        document.write('</br>');
+        document.write('</br>');
+        document.write('Use the + operator with different combinations of data types like number, string and boolean ');
+        document.write('</br>');
+
+        document.write('Number + String  Result display: ');
+        document.write(num + str);
+        document.write('</br>');
+
+        document.write('String + Boolean  Result display: ');
+        document.write(str + bool);
+        document.write('</br>');
+
+        document.write('Number + Boolean  Result display: ');
+        document.write(num + bool);
+        document.write('</br>');
+
+        document.write('Number - String  Result display: ');
+        document.write(num + str);
+        document.write('</br>');
+
+        document.write('String - Boolean Result display: ');
+        document.write(str + bool);
+        document.write('</br>');
+
+        document.write('Number - Boolean Result display: ');
+        document.write(num - bool);
+        document.write('</br>');
+
+        document.write('Number * String Result display: ');
+        document.write(num * str);
+        document.write('</br>');
+
+        
+        document.write('String * Boolean Result display: ');
+        document.write(str * bool);
+        document.write('</br>');
+
+        document.write('Number * Boolean Result display: ');
+        document.write(num * bool);
+        document.write('</br>');
+
+        document.write('Number / String Result display: ');
+        document.write(num / str);
+        document.write('</br>');
+
+        document.write('String / Boolean Result display: ');
+        document.write(str / bool);
+        document.write('</br>');
+
+        document.write('Number / Boolean Result display: ');
+        document.write(num / bool);
+        document.write('</br>');
+
+
+    </script>
+    
+</body>
+</html>
