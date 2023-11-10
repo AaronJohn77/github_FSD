@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Declaration </title>
+</head>
+
+<body>
+    <h3>Create a program with a global variable and a local variable inside a function. Demonstrate variable visibility
+        and how the local variable does not affect the global variable.</h3>
+
+    <Script>
+        let globalVar = "Hello";
+        document.write('Before the function: ');
+        document.write(globalVar);
+        document.write('</br>');
+
+        function x() {
+            let globalVar = "Hello World"
+            document.write('Inside the function: ');
+            document.write(globalVar);
+            document.write('</br>');
+        }
+        x();
+        document.write('Outside the function: ');
+        document.write(globalVar);
+
+
+    </Script>
+</body>
+
+</html>

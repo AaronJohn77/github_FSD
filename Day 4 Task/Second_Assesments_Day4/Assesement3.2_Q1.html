@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculater</title>
 </head>
+
 <body>
+    <h3>Create a JavaScript program that takes two numbers from the user and performs arithmetic operations such as
+        addition, subtraction, multiplication, and division on these numbers. Display the results to the user.</h3>
+
     <form>
         <label>Enter the first number:</label>
         <input type="number" name="num1" id="num1">
@@ -13,44 +18,44 @@
         <label>Enter the second number:</label>
         <input type="number" name="num2" id="num2">
         <br>
-        <button onclick="Sum()">Addition</button> 
-        <button onclick="Sub()">Subtraction</button> 
-        <button onclick="Mul()"> Multiplication</button> 
+        <button onclick="Sum()">Addition</button>
+        <button onclick="Sub()">Subtraction</button>
+        <button onclick="Mul()"> Multiplication</button>
         <button onclick="division()"> Division</button>
     </form>
 
     <script>
-        function Sum(){
+        function Sum() {
             let num1 = parseInt(document.getElementById("num1").value);
             let num2 = parseInt(document.getElementById("num2").value);
             let total = num1 + num2;
-            alert("This is sum function " + num1 + " + " + num2 + " = " + total );
+            alert("This is sum function " + num1 + " + " + num2 + " = " + total);
 
         }
 
-        function Sub(){
+        function Sub() {
             let num1 = parseInt(document.getElementById("num1").value);
             let num2 = parseInt(document.getElementById("num2").value);
             let total = num1 - num2;
-            alert("This is Subtraction function " + num1 + " - " + num2 + " = " + total );
+            alert("This is Subtraction function " + num1 + " - " + num2 + " = " + total);
 
         }
 
-        function Mul(){
+        function Mul() {
 
             let num1 = parseInt(document.getElementById("num1").value);
             let num2 = parseInt(document.getElementById("num2").value);
             let total = num1 * num2;
-            alert("This is Subtraction function " + num1 + " * " + num2 + " = " + total );
+            alert("This is Subtraction function " + num1 + " * " + num2 + " = " + total);
 
         }
 
-        function division(){
-            
+        function division() {
+
             let num1 = parseInt(document.getElementById("num1").value);
             let num2 = parseInt(document.getElementById("num2").value);
             let total = num1 / num2;
-            alert("This is Subtraction function " + num1 + " / " + num2 + " = " + total );
+            alert("This is Subtraction function " + num1 + " / " + num2 + " = " + total);
 
         }
 
@@ -58,7 +63,7 @@
 
 
     </script>
-    
+
 </body>
 
 

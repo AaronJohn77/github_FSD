@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorize the Age Group</title>
 </head>
+
 <body>
+    <h3>Create a program that asks the user for their age and then uses conditional statements to categorize the age
+        group (e.g., child, teenager, adult, senior citizen) and displays the result</h3>
+
     <form>
         <label>Enter your current age: </label> </br>
         <input type="number" id="age_textfield">
@@ -14,31 +19,31 @@
         <label id="show_agegroup">Your age group</label> -->
         <button onclick="categorize_age_group()"> Submit</button>
     </form>
-    
+
 </body>
 
 <script>
 
-    function categorize_age_group(){
+    function categorize_age_group() {
 
-        let age, age_categorize ;
+        let age, age_categorize;
         age = document.getElementById("age_textfield").value;
 
-        if(age <= 12){
+        if (age <= 12) {
             alert("Hi user, your are under Child categorize ");
 
 
-        }else if (age <= 18 && age > 12){
+        } else if (age <= 18 && age > 12) {
 
             alert("Hi user, your are under Teenager categorize ");
 
-        } else if (age <= 59 && age > 18){
+        } else if (age <= 59 && age > 18) {
 
 
-        alert("Hi user, your are under Adult categorize ");
+            alert("Hi user, your are under Adult categorize ");
 
-        
-        } else (age >= 60);{
+
+        } else (age >= 60); {
 
             alert("Hi user, your are under Senior Citizen categorize ");
         }
@@ -48,4 +53,5 @@
 
 
 </script>
+
 </html>
