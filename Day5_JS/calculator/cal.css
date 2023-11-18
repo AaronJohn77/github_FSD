@@ -1,0 +1,26 @@
+.calculater{
+
+    position: center;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px;
+    background-color: aquamarine;
+}
+
+table{
+    background-color: aquamarine;
+
+
+}
+
+button{
+
+    margin: 5px;
+    padding: auto;
+}
+
+button:hover{
+
+cursor: pointer;
+
+}
